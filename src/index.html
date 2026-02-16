@@ -4,16 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Mun Travel Agency</title>
+  <style>  
+ .montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+   }
+  </style>
 </head>
-<body>
+<body class="montserrat-font">
   <header>
+   <!-- Nav Section -->
+   <nav class="mx-5">
+      <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100     rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>Destination</a></li>
+        <li><a>When to Go</a></li>
+        <li><a>Accommodation</a></li>
+        <li><a>About Us</a></li>
+      </ul>
+    </div>
+    <a class="text-4xl italic font-serif font-extrabold">Mun</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Destination</a></li>
+      <li><a>When To Go</a></li>
+      <li><a>Accommodation</a></li>
+      <li><a>About Us</a></li>
+    </ul>
+    </div>
+    <div class="navbar-end">
+    <a class="btn btn-outline hover:bg-orange-950 hover:text-white hover:rounded-full">Log In</a>
+  </div>
+  </div>
+   </nav>
+   <!-- banner section -->
+    <div class="group">
+      <div class="hero min-h-screen
+      bg-[url('/assets/banner-kedarnath-1.jpeg')]
+      hover:bg-[url('/assets/banner-kedarnath-2.jpeg')]
+      bg-cover bg-center transition-all duration-700
+      ">
+      <div class="hero-overlay bg-black/50 group-hover:bg-black/40 transition-all"></div>
+      <div class="hero-content text-neutral-content text-center">
+         <div>
+            <h1 class="mb-5 text-5xl font-bold">Timeless Holidays Unlocked</h1>
+            <p class="mb-5">From iconic landmarks to hidden gems, we bring the world closer to you.Experience seamless travel, trusted services, and extraordinary moments designed to make every holiday truly timeless.</p>
+             <button class="btn btn-outline hover:bg-yellow-950 hover:text-white hover:rounded-full transition-all duration-300">
+          Get Started
+        </button>
+         </div>
+      </div>
+   </div>
 
+    </div>
   </header>
   <main>
 
   </main>
   <footer>
-   
+
   </footer>
 </body>
 </html>
