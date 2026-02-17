@@ -108,8 +108,10 @@
       </div>
     </section>
     <!-- Our World -->
-     <section class="mb-40 bg-[#030922] h-120">
-         <div class="pt-24 text-center mb-8">
+     <section class="relative py-16">
+      <div class="pointer-events-none absolute inset-x-0 top-0 h-120 bg-[#030922]"></div>
+      <div class="relative z-10">
+         <div class="pt-10 text-center mb-8">
          <h3 class="text-white text-7xl pb-3 font-extrabold font-serif">Our Worlds</h3>
          <p class="text-xl text-center text-white">Tailor-made travel taken further</p>
       </div> 
@@ -149,38 +151,79 @@
   </div>
          </div>
       </div>
-      <div class="mx-auto flex w-full items-center gap-5 px-5 py-8">
+      <div class="relative z-10 mx-auto flex w-full items-center gap-5 px-5 py-8">
        <div class="h-px flex-1 bg-gray-300"></div>
       <button class="btn hover:bg-amber-900 hover:text-white border-gray-300 px-10 py-5 text-sm tracking-[0.25em] text-[#1f2a44] uppercase">Discover Worlds</button>
        <div class="h-px flex-1 bg-gray-300"></div>
        </div>
+      </div>
      </section>
      <!-- About us -->
-    <section class="pt-60">
-      <div class="hero bg-base-200 max-w-7xl mx-auto px-6">
-         <div class="hero-content flex-col lg:flex-row items-center gap-16">
-            <!-- Left side -->
-            <div>
-            <img src="/assets/award.png" class="w-full object-cover rounded-md shadow-lg"/>
-            </div>
-            <!-- Right Side -->
-            <div class="text-center lg:text-left">
-                <h1 class="text-5xl font-bold leading-tight">
-         Award-winning 
-         <br>
-         Safari & Beach
-         <br>
-         Adventures
-      </h1>
-      <p class="py-6 text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0">
-         Are you dreaming of an extraordinary and unforgettable experience 
+    <section class="relative w-full overflow-hidden pt-0">
+      <!-- ── LARGE: beige bg on right (only visible on lg+) ── -->
+       <div class="hidden lg:block absolute inset-y-2 right-0 w-[55%] bg-[#ede8e3] z-0 pointer-events-none"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
+
+    <!-- SM/MD: stack vertically | LG: side by side -->
+    <div class="flex flex-col lg:flex-row lg:items-center lg:py-8">
+
+      <!-- ── IMAGE: full width on sm/md, 55% on lg ── -->
+      <div class="w-full lg:w-[55%] lg:flex-shrink-0">
+        <img
+          src="/assets/award.png"
+          alt="Safari view from tent"
+          class="w-full h-[260px] sm:h-[340px] lg:h-[420px] object-cover shadow-lg"
+        />
+      </div>
+
+      <!-- ── CONTENT: below image on sm/md, right side on lg ── -->
+      <!-- sm/md: white/light bg, centered, py for spacing | lg: sits on beige, pl for offset -->
+      <div class="flex flex-col items-center text-center
+                  px-6 py-10
+                  bg-[#ede8e3] lg:bg-transparent
+                  lg:flex-1 lg:pl-12 lg:pr-6 lg:py-0">
+
+        <!-- Heading -->
+        <h1
+          class="text-4xl lg:text-5xl font-medium leading-snug text-[#18203a]"
+          style="font-family: 'Cormorant Garamond', serif;"
+        >
+          Award-winning
+
+          <span class="flex items-center justify-center gap-3 mt-1">
+            <span class="text-2xl lg:text-3xl font-light" style="font-family: 'Jost', sans-serif;">→</span>
+            Safari &amp; Beach
+            <span class="text-2xl lg:text-3xl font-light" style="font-family: 'Jost', sans-serif;">←</span>
+          </span>
+
+          Adventures
+        </h1>
+
+        <!-- Body copy -->
+        <p
+          class="mt-6 text-sm leading-relaxed text-gray-500 max-w-[280px]"
+          style="font-family: 'Jost', sans-serif;"
+        >
+          Are you dreaming of an extraordinary and unforgettable experience
           that combines adventure, wildlife and relaxation?
-      </p>
-      <button class="btn btn-primary upp">View Itineraries</button>
+        </p>
+
+        <!-- CTA Button -->
+        <button
+          class="btn btn-outline btn-sm mt-10 px-8 tracking-[0.18em] uppercase text-xs rounded-none border-gray-400 text-[#18203a] hover:bg-[#18203a] hover:border-[#18203a] hover:text-white transition-all duration-300"
+          style="font-family: 'Jost', sans-serif;"
+        >
+          View Itineraries
+        </button>
+
+      </div>
+
     </div>
+
   </div>
-</div>
-    </section>
+
+</section>
+
   </main>
   <footer>
 
