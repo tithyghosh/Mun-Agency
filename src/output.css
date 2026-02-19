@@ -1990,6 +1990,9 @@
   .h-\[260px\] {
     height: 260px;
   }
+  .h-\[300px\] {
+    height: 300px;
+  }
   .h-\[320px\] {
     height: 320px;
   }
@@ -2082,6 +2085,9 @@
   }
   .max-w-\[920px\] {
     max-width: 920px;
+  }
+  .max-w-\[1100px\] {
+    max-width: 1100px;
   }
   .max-w-\[1450px\] {
     max-width: 1450px;
@@ -2421,6 +2427,9 @@
   }
   .bg-\[url\(\'\/src\/banner-kedarnath-1\.jpeg\'\)\] {
     background-image: url('/src/banner-kedarnath-1.jpeg');
+  }
+  .bg-\[url\(\'assets\/banner-kedarnath-1\.jpeg\'\)\] {
+    background-image: url('assets/banner-kedarnath-1.jpeg');
   }
   .bg-\[url\(\'src\/assets\/banner-kedarnath-1\.jpeg\'\)\] {
     background-image: url('src/assets/banner-kedarnath-1.jpeg');
@@ -2974,6 +2983,13 @@
       }
     }
   }
+  .hover\:bg-\[url\(\'assets\/banner-kedarnath-2\.jpeg\'\)\] {
+    &:hover {
+      @media (hover: hover) {
+        background-image: url('assets/banner-kedarnath-2.jpeg');
+      }
+    }
+  }
   .hover\:bg-\[url\(\'src\/assets\/banner-kedarnath-2\.jpeg\'\)\] {
     &:hover {
       @media (hover: hover) {
@@ -3003,6 +3019,11 @@
   .sm\:h-\[340px\] {
     @media (width >= 40rem) {
       height: 340px;
+    }
+  }
+  .sm\:h-\[420px\] {
+    @media (width >= 40rem) {
+      height: 420px;
     }
   }
   .sm\:footer-horizontal {
@@ -3161,6 +3182,11 @@
   .lg\:p-16 {
     @media (width >= 64rem) {
       padding: calc(var(--spacing) * 16);
+    }
+  }
+  .lg\:px-6 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 6);
     }
   }
   .lg\:px-10 {
